@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Hardware monitor",
+    "description": "Shows live CPU, memory, disk, network, and GPU data below the message composer."
+  }
+}

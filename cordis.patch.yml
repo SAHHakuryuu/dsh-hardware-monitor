@@ -1,0 +1,3 @@
+- insert:
+    - id: hardware-monitor
+      name: '@local/hardware-monitor'

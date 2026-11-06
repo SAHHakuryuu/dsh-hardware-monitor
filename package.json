@@ -1,0 +1,41 @@
+{
+  "name": "@local/hardware-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Live CPU, memory, disk, network and GPU readout in the composer dock.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./collector": "./collector.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "collector.js",
+    "cordis.patch.yml",
+    "README.md",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "scripts": {
+    "test": "node test/sse.mjs",
+    "probe": "node test/probe.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
