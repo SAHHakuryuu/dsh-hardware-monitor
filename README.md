@@ -66,3 +66,7 @@ subscriber disconnects, so an unopened page costs no CPU.
 
 Slow probes are throttled: disk and network counters every 5 s, GPU every 10 s.
 The GPU probe is skipped after its first failure until the sampler restarts.
+
+## License
+
+[MIT](LICENSE) © 2026 SAHHakuryuu

@@ -2,6 +2,7 @@
   "name": "@local/hardware-monitor",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "Live CPU, memory, disk, network and GPU readout in the composer dock.",
   "repository": {
@@ -22,6 +23,7 @@
     "collector.js",
     "cordis.patch.yml",
     "README.md",
+    "LICENSE",
     "locale/*.json",
     "icon.svg"
   ],
