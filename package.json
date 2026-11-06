@@ -4,6 +4,11 @@
   "private": true,
   "type": "module",
   "description": "Live CPU, memory, disk, network and GPU readout in the composer dock.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAHHakuryuu/dsh-hardware-monitor.git"
+  },
+  "homepage": "https://github.com/SAHHakuryuu/dsh-hardware-monitor#readme",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
